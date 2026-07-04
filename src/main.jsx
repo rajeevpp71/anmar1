@@ -2,7 +2,7 @@
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
-      <BrowserRouter basename="/new">
+      <BrowserRouter basename="/new1">
       <App />
     </BrowserRouter>
   </StrictMode>

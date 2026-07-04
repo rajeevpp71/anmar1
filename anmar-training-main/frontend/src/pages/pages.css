@@ -1,0 +1,133 @@
+/* Shared interior-page patterns */
+
+.pillar-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.pillar-grid--4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.pillar-card {
+  padding: 30px 26px;
+}
+
+.pillar-card__icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 13px;
+  background: var(--gold-100);
+  color: var(--gold-700);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.pillar-card h3 {
+  font-size: 17px;
+  margin-bottom: 8px;
+}
+
+.pillar-card p {
+  font-size: 14px;
+}
+
+.statement-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.statement-card {
+  padding: 36px 32px;
+}
+
+.statement-card__icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, var(--maroon-700), var(--maroon-900));
+  color: var(--gold-400);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+
+.statement-card h2 {
+  font-size: 22px;
+  margin: 10px 0 14px;
+}
+
+.chip-grid {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: var(--paper-0);
+  border: 1px solid var(--line);
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--ink-700);
+  transition: border-color 0.15s ease, color 0.15s ease, background 0.15s ease;
+}
+
+.chip:hover {
+  border-color: var(--maroon-700);
+  color: var(--maroon-700);
+  background: var(--maroon-050);
+}
+
+.chip svg {
+  color: var(--gold-600);
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 26px;
+}
+
+.steps-grid__item {
+  position: relative;
+  padding-left: 4px;
+}
+
+.steps-grid__num {
+  font-family: var(--font-display);
+  font-size: 34px;
+  color: var(--gold-500);
+  display: block;
+  margin-bottom: 10px;
+}
+
+.steps-grid__item h3 {
+  font-size: 16.5px;
+  margin-bottom: 8px;
+}
+
+.steps-grid__item p {
+  font-size: 13.5px;
+}
+
+@media (max-width: 980px) {
+  .pillar-grid, .pillar-grid--4 { grid-template-columns: repeat(2, 1fr); }
+  .statement-grid { grid-template-columns: 1fr; }
+  .steps-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 560px) {
+  .pillar-grid, .pillar-grid--4 { grid-template-columns: 1fr; }
+  .steps-grid { grid-template-columns: 1fr; }
+}

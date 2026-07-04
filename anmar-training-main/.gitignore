@@ -1,0 +1,21 @@
+# Legacy PHP admin portal - not part of initial commit (contains DB credentials)
+*.php
+*.mdb
+error_log
+uploads/
+sabiccourses2018/
+INVOICE.docx
+*.htm
+/*.html
+/images/
+/createtablecourse.txt
+
+# Node / frontend
+node_modules/
+frontend/dist/
+frontend/.vite/
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
